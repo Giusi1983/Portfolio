@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { Provider } from "react-redux";
+// import store from "./store/store"; // Importa lo store Redux
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Services from "./pages/Services";
+import Blog from "./pages/Blog";
+import Contacts from "./pages/Contact";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css"; // Importa lo stile di Bootstrap
+import NavbarComponent from "./components/NavBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <ThemeProvider theme={theme}>
+    <Router>
+      {/* Navbar globale */}
+      <NavbarComponent />
+      {/* Rotte della tua applicazione */}
+      <Container fluid className="p-0">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contacts" element={<Contacts />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </Router>
   );
 }
 
