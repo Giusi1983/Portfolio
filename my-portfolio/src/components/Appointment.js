@@ -32,7 +32,7 @@ const AppointmentBooking = () => {
   };
 
   return (
-    <Container className='mt-4'>
+    <Container className='mt-4 contacts-wrapper'>
       <Row className='justify-content-center'>
         <Col xs={12} md={8}>
         <Card className='shadow-lg p-4'>

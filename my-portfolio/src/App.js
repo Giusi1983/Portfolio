@@ -14,6 +14,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css"; // Importa lo stile di Bootstrap
 import NavbarComponent from "./components/NavBar";
+import PostDetail from "./pages/postDetail"; // Importa il componente PostDetail per i dettagli del post
+
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contacts" element={<Contacts />} />
+          {/* Aggiungi la rotta per il dettaglio del post */}
+          <Route path="/post/:id" element={<PostDetail />} /> {/* Dettaglio articolo blog */}
         </Routes>
       </Container>
       <Footer />

@@ -8,7 +8,7 @@ const About = () => {
       <Row className="align-items-center bg-light p-5 rounded">
         <Col md={4} className="text-center">
           <img
-            src="/profile-picture.jpg"
+            src="/foto-cv.jpg"
             alt="About Me"
             className="img-fluid rounded-circle shadow-lg"
             style={{ width: '200px', height: '200px', objectFit: 'cover' }}
