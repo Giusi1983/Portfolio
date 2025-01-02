@@ -73,7 +73,7 @@ const Blog = () => {
                 <Card.Text>{post.summary}</Card.Text>
                 {/* Link to the detailed post page */}
                 <Link to={`/post/${post.id}`}>
-                  <Button variant="primary">Read More</Button>
+                  <Button variant="secondary">Read More</Button>
                 </Link>
               </Card.Body>
             </Card>
