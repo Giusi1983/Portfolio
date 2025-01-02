@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, ListGroup, Badge } from 'react-bootstrap';
 
 const About = () => {
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 p-5 min-vh-100">
       {/* Hero Section */}
       <Row className="align-items-center bg-light p-5 rounded">
         <Col md={4} className="text-center">

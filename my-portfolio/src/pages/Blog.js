@@ -9,7 +9,7 @@ const Blog = () => {
   ];
 
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 min-vh-100">
       <h1 className="text-center mb-4">Blog</h1>
 
       {/* Filter Categories */}

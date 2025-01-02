@@ -5,12 +5,12 @@ const Services = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="text-black text-center py-5">
+      <div className="text-black text-center py-5 p-5">
         <h1>My Services</h1>
         <p>Discover the solutions I offer to help your business succeed.</p>
       </div>
 
-      <Container className="mt-5">
+      <Container className="mt-5 min-vh-100">
         {/* Detailed Services */}
         <Row className="g-4">
           <Col md={4}>

@@ -41,7 +41,7 @@ const Contacts = () => {
       ref={contactsRef}
       className={`contacts-container ${isContactsVisible ? "visible" : ""}`}
     >
-      <div className="contacts-container-wrapper">
+      <div className="contacts-container-wrapper min-vh-100">
         <div className="contacts-image">
           <img className="foto-cv" src="foto-cv.jpg" alt="fotoCv" />
           <p>Get in touch with me!</p>

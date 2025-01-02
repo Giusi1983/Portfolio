@@ -12,19 +12,19 @@ const Footer = () => {
       <div className="footer-section links-section">
         <ul className="footer-links">
           <li>
-            <a href="/">Home</a>
+            <a className="footer-item" href="/">Home</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a className="footer-item"href="/about">About</a>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <a className="footer-item" href="/services">Services</a>
           </li>
           <li>
-            <a href="/blog">Blog</a>
+            <a className="footer-item" href="/blog">Blog</a>
           </li>
           <li>
-            <a href="/contacts">Contacts</a>
+            <a className="footer-item" href="/contacts">Contacts</a>
           </li>
         </ul>
       </div>
@@ -32,18 +32,11 @@ const Footer = () => {
         <h2>Follow Me</h2>
         <div className="social-icons">
           <a
-            href="https://facebook.com"
+            href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            FB
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            TW
+            GI
           </a>
           <a
             href="https://linkedin.com"
@@ -51,13 +44,6 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             LI
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            IG
           </a>
         </div>
         <p className="footer-copyright">

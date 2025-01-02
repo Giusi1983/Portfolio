@@ -30,6 +30,11 @@
   color: #61dafb;
 }
 
+.hero {
+  height: 100vh; /* Ogni sezione occupa l'intera altezza della finestra */
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -297,6 +302,10 @@ p {
   text-align: center;
 }
 
+.footer-item a:hover {
+  color:#000;
+}
+
 .footer-logo {
   font-size: 24px;
   font-weight: bold;
@@ -330,7 +339,7 @@ p {
 }
 
 .footer-links a:hover {
-  color: #1e90ff;
+  color: #000;
 }
 
 .social-icons {
